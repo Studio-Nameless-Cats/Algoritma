@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function linearSearch(array, target) {
+            for(let i = 0; i < array.length; i++) {
+                if (array[i] === target) {
+                    return i;
+                }
+            }
+            return -1;
+        }
+
+
+        const namaNabi = ["Nabi Adam AS", "Nabi Idris AS", "Nabi Nuh AS", "Nabi Hud AS", "Nabi Saleh AS", "Nabi Ibrahim AS", "Nabi Ismail AS", "Nabi Ishaq AS", "Nabi Luth AS", "Nabi Ya’qub AS", "Nabi Yusuf AS", "Nabi Syu’aib AS", "Nabi Ayyub AS", "Nabi Dzulkifli AS", "Nabi Musa AS", "Nabi Harun AS", "Nabi Daud AS", "Nabi Sulaiman AS", "Nabi Ilyas AS", "Nabi Ilyasa AS", "Nabi Yunus AS", "Nabi Zakaria AS", "Nabi Yahya AS", "Nabi Isa AS", "Nabi Muhammad SAW"
+]
+        const namaYangDicari = "Nabi Musa AS";
+
+        const indeks = linearSearch(namaNabi, namaYangDicari);
+        if (indeks !== -1) {
+            console.log(
+                "Nama Nabi", namaYangDicari, "ada pada indeks", indeks
+            );
+        } else {
+            console.log ("Nama Nabi", namaYangDicari,"tidak ditemukan");
+        }
+    </script>
+</body>
+</html>
